@@ -1,0 +1,36 @@
+{
+  "name": "ignews",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "stripe": "stripe listen  --forward-to localhost:3000/api/webhooks"
+  },
+  "dependencies": {
+    "@prismicio/client": "^5.1.0",
+    "@stripe/stripe-js": "^1.22.0",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "emoji-picker-react": "^3.4.8",
+    "faunadb": "^4.4.1",
+    "next": "12.0.7",
+    "next-auth": "^4.0.5",
+    "prismic-dom": "^2.2.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sass": "^1.44.0",
+    "stripe": "^8.191.0"
+  },
+  "devDependencies": {
+    "@types/next-auth": "^3.15.0",
+    "@types/node": "^16.11.12",
+    "@types/prismic-dom": "^2.1.1",
+    "@types/react": "^17.0.37",
+    "eslint": "8.4.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "^4.5.2"
+  }
+}
