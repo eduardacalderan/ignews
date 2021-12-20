@@ -13,12 +13,12 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
   const router = useRouter();
 
   async function handleSubscribe() {
-    if (!session) {
+    if (!session.activeSubscription) {
       signIn("github");
       return;
     }
 
-    if (session) {
+    if (session..activeSubscription) {
       router.push("/posts");
       return;
     }
